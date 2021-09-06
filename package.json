@@ -1,0 +1,39 @@
+{
+  "name": "sjatt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently npm:start:parcel npm:start:express",
+    "start:parcel": "parcel src/client/index.html",
+    "start:express": "nodemon --watch src/server src/server/server.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TorgersenOscar/Sjatt.git"
+  },
+  "author": "Maximilian Andreas Rasmussen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TorgersenOscar/Sjatt/issues"
+  },
+  "homepage": "https://github.com/TorgersenOscar/Sjatt#readme",
+  "dependencies": {
+    "firebase": "^9.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router": "^5.2.1",
+    "react-router-dom": "^5.3.0"
+  },
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.2.1",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "nodemon": "^2.0.12",
+    "parcel": "^2.0.0-rc.0"
+  }
+}
