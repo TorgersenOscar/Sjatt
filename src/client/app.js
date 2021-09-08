@@ -9,8 +9,11 @@ export const App = () => {
         <>
             <BrowserRouter>
                 <Switch>
-                    <Route path={"/"}>
+                    <Route path={"/login"}>
                       <Home/>
+                    </Route>
+                    <Route path={"/home"}>
+                        <h1>Hey dude</h1>
                     </Route>
                     <Route>page not found</Route>
                 </Switch>

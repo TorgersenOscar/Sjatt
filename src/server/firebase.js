@@ -1,25 +1,17 @@
-import firebase from "firebase";
+import {initializeApp} from "firebase/firebase-app";
+import firebase from "firebase/app";
 
 const firebaseConfig = {
-    apiKey: process.env.API_KEY,
-    authDomain: process.env.AUTH_DOMAIN,
-    projectId: process.env.PROJECT_ID,
-    storageBucket: process.env.STORAGE_BUCKET,
-    messagingSenderId: process.env.MESSAGING_SENDER_ID,
-    appId: process.env.APP_ID,
-    measurementId: process.env.MEASUREMENT_ID,
-    databaseURL:
-        "https://reportapp-36c50-default-rtdb.europe-west1.firebasedatabase.app/",
+    apiKey: "AIzaSyAWfjnPGkVfA-JcZc2hmHcfjKhaGVrgfmg",
+    authDomain: "chat-b591c.firebaseapp.com",
+    databaseURL: "https://chat-b591c-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "chat-b591c",
+    storageBucket: "chat-b591c.appspot.com",
+    messagingSenderId: "519695525479",
+    appId: "1:519695525479:web:adaa36602c597edbab56c2",
+    measurementId: "G-657CQH4HJ0"
 };
 
-try {
-    firebase.initializeApp(firebaseConfig);
-} catch (e) {
-    if (!/already exists/.test(e.message)) {
-        console.error("Firebase initialization error", e.stack);
-    }
-}
+const app = initializeApp(firebaseConfig);
 
-const fire = firebase;
-
-export default fire;
+export default app;
