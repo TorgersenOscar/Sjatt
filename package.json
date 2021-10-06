@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run parcel\"",
-    "server": "nodemon --watch src/server src/server/server.js",
-    "parcel": "parcel watch src/client/index.html",
-    "format": "prettier --write src"
+    "start": "concurrently npm:server npm:client",
+    "client": "parcel src/client/index.html",
+    "server": "nodemon --watch src/server src/server/server.js"
   },
   "repository": {
     "type": "git",
