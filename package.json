@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently npm:server npm:client",
-    "client": "parcel src/client/index.html",
-    "server": "nodemon --watch src/server src/server/server.js",
-    "format": "prettier --write src"
+    "start": "concurrently npm:start:parcel npm:start:express",
+    "start:parcel": "parcel src/client/index.html",
+    "start:express": "nodemon --watch src/server src/server/server.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
