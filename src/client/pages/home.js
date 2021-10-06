@@ -19,7 +19,6 @@ export const Home = () => {
 
                             <h1 className={"content-header"}>Welcome to the world of</h1>
                             <h1 className={"content-header-punchline"}>Sea Mongers</h1>
-                            <div className={"content-line"}/>
                         </div>
                         <div className={"content-line-bottom"}/>
                     </div>

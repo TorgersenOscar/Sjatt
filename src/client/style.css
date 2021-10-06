@@ -59,6 +59,7 @@
     box-shadow: 0 4px 25px -10px rgba(50, 50, 50, 0.6);
     z-index: 100;
     margin-top: -85px;
+    padding-top: 15px;
 }
 
 .container-content-modifier-2{

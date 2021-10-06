@@ -24,7 +24,7 @@ export const Nav = () => {
         e.preventDefault();
         console.log("SCROLLING");
         console.log(window.scrollY);
-        (window.scrollY >= 285) ? (setScrollValue("fixed")) : (setScrollValue("absolute"));
+        (window.scrollY >= 300) ? (setScrollValue("fixed")) : (setScrollValue("absolute"));
     })
 
     const switchClassNameTriple = (first, second, third, factor) => {
@@ -61,7 +61,7 @@ export const Nav = () => {
     }
 
     const checkScroll = () => {
-        return (scrollValue === "absolute") ? ("285px") : ("0px");
+        return (scrollValue === "absolute") ? ("300px") : ("0px");
     }
 
     return (
