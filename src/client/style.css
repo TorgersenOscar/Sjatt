@@ -452,6 +452,7 @@
     .container-grid{
         align-items: center;
         justify-content: center;
+        margin-top: 100px;
     }
 
     .arrow{
@@ -479,7 +480,6 @@
         min-width: 175px;
         transition: 0.15s;
     }
-
 }
 
 @media only screen and (max-width:1400px) {
