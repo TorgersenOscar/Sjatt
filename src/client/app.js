@@ -9,7 +9,7 @@ export const App = () => {
         <>
             <BrowserRouter>
                 <Switch>
-                    <Route path={"/login"}>
+                    <Route exact path={"/"}>
                       <Home/>
                     </Route>
                     <Route path={"/home"}>
