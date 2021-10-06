@@ -22,8 +22,6 @@ export const Nav = () => {
 
     window.addEventListener("scroll", (e) => {
         e.preventDefault();
-        console.log("SCROLLING");
-        console.log(window.scrollY);
         (window.scrollY >= 300) ? (setScrollValue("fixed")) : (setScrollValue("absolute"));
     })
 
@@ -36,7 +34,6 @@ export const Nav = () => {
     }
 
     const openMenu = () => {
-        console.log("Clicked");
         setOpen(!open);
     }
 
