@@ -55,7 +55,7 @@ export const Nav = () => {
 
     const scrollToTop = () => {
         window.scrollTo({
-            top: 285,
+            top: 300,
             behavior: 'smooth',
         })
     }
