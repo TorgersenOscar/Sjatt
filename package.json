@@ -3,11 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "start": "concurrently npm:server npm:client",
-    "client": "parcel src/client/index.html",
-    "server": "nodemon --watch src/server src/server/server.js"
-  },
+  "start": "node src/server/server.js",
+  "server": "nodemon --watch src/server src/server/server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TorgersenOscar/Sjatt.git"
