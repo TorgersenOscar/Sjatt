@@ -15,7 +15,7 @@ app.use((req, res, next) => {
     }
 });
 
-const server = app.listen(8080, () => {
+const server = app.listen(3000, () => {
     console.log(`Server started on port ${server.address().port}`);
     console.log(`Link to server: http://localhost:${server.address().port}`);
 });
